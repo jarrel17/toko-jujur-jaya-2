@@ -1,0 +1,10 @@
+# Rahasia - JANGAN pernah di-commit
+htdocs/config/config.local.php
+.env
+*.env
+
+# Lain-lain
+*.log
+*.bak
+.DS_Store
+Thumbs.db

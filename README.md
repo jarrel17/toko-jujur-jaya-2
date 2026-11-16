@@ -39,7 +39,7 @@ Aturan ada di satu tempat: `htdocs/config/akses.php` (`$HAK_AKSES`).
 
 ## Teknologi
 
-- PHP 8.x (tanpa framework, tanpa dependency pihak ketiga / Composer)
+- PHP 8.3 (tanpa framework, tanpa dependency pihak ketiga / Composer)
 - MySQL / MariaDB (ekstensi `mysqli` + `mysqlnd`)
 - HTML + CSS murni
 - Hosting: InfinityFree (dapat dipindah ke hosting PHP mana pun)

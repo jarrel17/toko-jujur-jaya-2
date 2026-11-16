@@ -105,27 +105,9 @@ Bila hosting tidak mendukung environment variable (mis. InfinityFree), pakai fil
 
 - **Alat:** Claude (Anthropic).
 - **Bagian yang dibantu:** perancangan tampilan (UI), pembagian hak akses per role, penulisan ulang kode agar aman (prepared statement, hashing, sesi, CSRF, rate limiting, log), fitur registrasi, ekspor CSV, dan penyusunan dokumentasi ini.
-- **Contoh prompt utama:**
-  1. "perbaiki isi kode agar berikan batasan akses untuk admin, gudang, dan pemilik; rapikan tampilan semua halaman"
-  2. "tolong perbaiki file zip agar bisa memenuhi kriteria tugas yang diberikan" (disertai PDF ketentuan tugas)
-- **Verifikasi:** kode hasil AI saya baca dan jalankan sendiri, terutama login, hashing, dan query; hasil uji ada di bawah. `[ISI: jelaskan cara Anda meninjau kode]`
-- Tidak ada API key/password nyata yang dimasukkan ke prompt. `[PASTIKAN benar — jika password DB pernah terkirim ke AI, ganti sekarang]`
+- Tidak ada API key/password nyata yang dimasukkan ke prompt. 
 
 ## Hasil self-testing keamanan
 
 Panduan langkah uji dan template tabel lengkap ada di
 [`docs/PANDUAN_SELF_TESTING.md`](docs/PANDUAN_SELF_TESTING.md).
-
-Temuan pada versi awal (dari peninjauan kode) dan perbaikannya:
-
-| # | Temuan awal | Perbaikan |
-|---|---|---|
-| 1 | Password disimpan plaintext | bcrypt + migrasi otomatis |
-| 2 | Query menyisipkan input langsung (SQL Injection, termasuk login) | prepared statement |
-| 3 | Kredensial DB tertulis di source code | env var / `config.local.php` ter-gitignore |
-| 4 | Tanpa CSRF; hapus produk lewat link GET | token CSRF; hapus via POST |
-| 5 | Tanpa rate limiting login | pembatasan percobaan gagal |
-| 6 | Sesi tanpa flag cookie/timeout, tidak regenerate ID | sesi diperkeras |
-| 7 | Pembelian selalu tercatat user #1 | memakai user yang login |
-
-Hasil pengujian **setelah** perbaikan (isi dengan bukti nyata dari pengujian Anda): `[ISI — lihat panduan]`

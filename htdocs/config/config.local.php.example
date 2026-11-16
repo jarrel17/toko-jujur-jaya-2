@@ -1,0 +1,10 @@
+<?php
+/* Salin file ini menjadi config.local.php lalu isi dengan kredensial database
+   milik Anda. File config.local.php TIDAK boleh di-commit (sudah ada di .gitignore). */
+
+return [
+    'host' => 'isi_host_database',
+    'user' => 'isi_username_database',
+    'pass' => 'isi_password_database',
+    'name' => 'isi_nama_database',
+];

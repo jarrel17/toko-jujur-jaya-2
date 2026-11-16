@@ -4,8 +4,8 @@ Aplikasi web untuk mengelola produk, penjualan, pembelian, hutang/piutang, retur
 dan laporan keuangan toko bangunan. Dibuat untuk **Tugas Project Cyber Security**
 (Pengembangan & Pengamanan Aplikasi Web).
 
-- **URL Aplikasi:** `https://ISI-DOMAIN-ANDA`  <!-- isi setelah deploy -->
-- **Repository:** `https://github.com/ISI-USERNAME/ISI-REPO`
+- **URL Aplikasi:** `https://ervinjarrel.my.id` 
+- **Repository:** `https://github.com/jarrel17/toko-jujur-jaya-2`
 
 ## Fitur
 

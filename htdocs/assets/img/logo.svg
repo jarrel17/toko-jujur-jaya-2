@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#60a5fa"/>
+      <stop offset="1" stop-color="#1d4ed8"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#bg)"/>
+  <!-- atap / kanopi toko -->
+  <path d="M12 26 L16 14 H48 L52 26 Z" fill="#ffffff"/>
+  <path d="M12 26 q5 6 10 0 q5 6 10 0 q5 6 10 0 q5 6 10 0 Z" fill="#dbeafe"/>
+  <!-- badan toko -->
+  <rect x="15" y="31" width="34" height="19" rx="2" fill="#ffffff"/>
+  <!-- pintu -->
+  <rect x="38" y="36" width="8" height="14" rx="1.5" fill="#2563eb"/>
+  <!-- jendela -->
+  <rect x="19" y="36" width="14" height="9" rx="1.5" fill="#93c5fd"/>
+  <!-- tanah -->
+  <rect x="11" y="50" width="42" height="3" rx="1.5" fill="#bfdbfe"/>
+</svg>
